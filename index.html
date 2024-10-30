@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <title>QuizApp</title>
@@ -11,12 +11,12 @@
 <body onload="init()">
 <div class="quiz">
     <div class="card quiz-card">
-        <img src="static/logos/brainbg.jpg" class="card-img-top">
+        <img src="static/logos/question-mark.png" class="card-img-top" alt="Quiz Logo">
 
         <div class="card-body" id="end-screen" style="display: none">
             <h5 class="card-title">Quiz Beendet</h5>
             <p class="card-text">Du hast <b id="correct-answers">0</b> von <b id="total-questions">0</b> Fragen richtig beantwortet.</p>
-            <button class="btn btn-primary" onclick="restartQuiz()">Quiz Neustarten</button>
+            <button class="btn btn-primary float-end" onclick="restartQuiz()">Quiz Neustarten</button>
         </div>
 
         <div class="card-body" id="question-body">

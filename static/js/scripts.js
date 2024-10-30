@@ -7,7 +7,7 @@ let correctAnswers = 0;
 
 function showQuestion() {
     if (currentQuestion >= questions.length) {
-        document.getElementById("end-screen").style = "";
+        document.getElementById("end-screen").style = '';
         document.getElementById("question-body").style = "display: none";
         document.getElementById("correct-answers").innerText = correctAnswers;
         document.getElementById("total-questions").innerText = questions.length;
@@ -26,7 +26,7 @@ function showQuestion() {
 
 function answer(option) {
     let question = questions[currentQuestion];
-    if (option == question.answer) {
+    if (option === question.answer) {
         document.getElementById("answer-" + option).classList.add("correct");
         correctAnswers++;
     } else {
@@ -34,7 +34,7 @@ function answer(option) {
         document.getElementById("answer-" + question.answer).parentNode.classList.add("correct-highlight");
     }
     document.getElementById("next-button").disabled = false;
-    if (currentQuestion == questions.length - 1) {
+    if (currentQuestion === questions.length - 1) {
         document.getElementById("next-button").innerText = "Ergebnisse anzeigen";
     }
 }
