@@ -12,7 +12,14 @@
 <div class="quiz">
     <div class="card quiz-card">
         <img src="static/logos/brainbg.jpg" class="card-img-top">
-        <div class="card-body">
+
+        <div class="card-body" id="end-screen" style="display: none">
+            <h5 class="card-title">Quiz Beendet</h5>
+            <p class="card-text">Du hast <b id="correct-answers">0</b> von <b id="total-questions">0</b> Fragen richtig beantwortet.</p>
+            <button class="btn btn-primary" onclick="restartQuiz()">Quiz Neustarten</button>
+        </div>
+
+        <div class="card-body" id="question-body">
             <h5 class="card-title" id="question">Frage:</h5>
             <div class="card quiz-card-answer mb-2" onclick="answer(1)">
                 <div class="card-body" id="answer-1">
