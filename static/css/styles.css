@@ -1,6 +1,6 @@
 body {
     min-height: 100vh;
-    background-color: #fffbf0 !important;
+    background-color: #001a35 !important;
 }
 
 .quiz {
@@ -12,6 +12,8 @@ body {
 
 .quiz-card {
     width: 30rem;
+    border: #c63130 2px solid;
+    border-radius: 8px;
 }
 
 .card-img-top {
@@ -19,11 +21,37 @@ body {
     height: 10rem;
     object-fit: cover;
     margin: 0 auto;
+    border-radius: 8px;
+}
+
+.card-img-top-win {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin: 0 auto;
+    border-radius: 8px 8px 0 0;
+}
+
+.progress {
+    height: 1.5rem;
+}
+
+.progress-bar {
+    background-color: #c63130;
+}
+
+.progress-body {
+    padding: 12px;
 }
 
 .quiz-card-answer:hover {
     cursor: pointer;
-    background-color: rgba(0,0,0,0.04);
+    background-color: rgba(0, 0, 0, 0.04);
+}
+
+.btn-dark-blue {
+    background-color: #c63130 !important;
+    border-color: #c63130 !important;
 }
 
 .correct {
@@ -36,7 +64,7 @@ body {
 }
 
 .wrong {
-    background-color: rgba(255,0,0,0.25);
+    background-color: rgba(255, 0, 0, 0.25);
 }
 
 .question-footer {
@@ -46,4 +74,16 @@ body {
     justify-content: space-between;
     align-items: center;
     margin-top: 20px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-bold {
+    font-weight: bold;
+}
+
+.text-2rem {
+    font-size: 2rem;
 }

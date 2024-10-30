@@ -1,4 +1,4 @@
-let questions = [
+let quiz_html = [
     {
         "question": "Welches Protokoll wird häufig für den Versand von Webseiten verwendet?",
         "option1": "FTP",
