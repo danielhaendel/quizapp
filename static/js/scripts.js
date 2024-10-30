@@ -7,7 +7,6 @@ let correctAnswers = 0;
 
 function showQuestion() {
     if (currentQuestion >= questions.length) {
-        // TODO: Show results
         document.getElementById("end-screen").style = "";
         document.getElementById("question-body").style = "display: none";
         document.getElementById("correct-answers").innerText = correctAnswers;
