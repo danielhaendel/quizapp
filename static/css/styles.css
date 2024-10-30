@@ -32,6 +32,14 @@ body {
     border-radius: 8px 8px 0 0;
 }
 
+.quiz-choose {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    gap: 20px;
+}
+
 .progress {
     height: 1.5rem;
 }
@@ -86,4 +94,8 @@ body {
 
 .text-2rem {
     font-size: 2rem;
+}
+
+.width-50 {
+    width: 50%;
 }

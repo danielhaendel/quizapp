@@ -8,14 +8,43 @@
     <script src="static/js/db.js"></script>
     <script src="static/js/scripts.js"></script>
 </head>
-<body onload="init()">
+<body>
 <div class="quiz">
     <div class="card quiz-card">
         <img src="static/logos/question-mark.png" class="card-img-top" alt="Quiz Logo" id="image">
         <div class="progress-body">
-            <div class="progress">
+            <div class="progress d-none" id="progress-bar-div">
                 <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0"
                      aria-valuemax="100" id="progress-bar">25%
+                </div>
+            </div>
+        </div>
+        <div class="card-body" id="start-screen">
+            <h5 class="card-title text-center text-bold text-2rem">Wähle ein Quiz</h5>
+            <div class="quiz-selection">
+                <div class="quiz-choose">
+                    <div class="card width-50 quiz-card-answer" onclick="chooseQuiz(quiz_html)">
+                        <div class="card-body">
+                            HTML
+                        </div>
+                    </div>
+                    <div class="card width-50 quiz-card-answer" onclick="chooseQuiz(quiz_css)">
+                        <div class="card-body">
+                            CSS
+                        </div>
+                    </div>
+                </div>
+                <div class="quiz-choose">
+                    <div class="card width-50 quiz-card-answer" onclick="chooseQuiz(quiz_js)">
+                        <div class="card-body">
+                            JavaScript
+                        </div>
+                    </div>
+                    <div class="card width-50 quiz-card-answer" onclick="chooseQuiz(quiz_java)">
+                        <div class="card-body">
+                            Java
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -26,7 +55,7 @@
             <button class="btn btn-primary float-end btn-dark-blue" onclick="restartQuiz()">Quiz neustarten</button>
         </div>
 
-        <div class="card-body" id="question-body">
+        <div class="card-body" id="question-body" style="display: none">
             <h5 class="card-title" id="question">Frage:</h5>
             <div class="card quiz-card-answer mb-2" onclick="answer(1)">
                 <div class="card-body" id="answer-1">
